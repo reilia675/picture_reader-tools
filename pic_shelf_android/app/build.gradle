@@ -1,0 +1,24 @@
+plugins {
+    id "com.android.application"
+}
+
+android {
+    namespace "com.reilia.picshelf"
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.reilia.picshelf"
+        minSdk 23
+        targetSdk 35
+        versionCode 9
+        versionName "0.5.1"
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            shrinkResources false
+        }
+    }
+}
